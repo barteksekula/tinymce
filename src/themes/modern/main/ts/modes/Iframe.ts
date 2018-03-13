@@ -90,7 +90,7 @@ const render = function (editor, theme, args) {
   });
   panel.add(Sidebar.hasSidebar(editor) ? editAreaContainer(editor) : editArea('1 0 0 0'));
 
-  UiContainer.setUiContainer(editor, panel);
+  UiContainer.setUiContainer(editor, toolbarPanel);
 
   if (Settings.getResize(editor) !== 'none') {
     resizeHandleCtrl = {
